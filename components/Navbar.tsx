@@ -40,7 +40,7 @@ const Navbar : NextPage=() => {
             />
          </div>
         </Link>
-        <div className='relative hidden md:block'>
+        <div className='relative'>
             <form onSubmit={handleSearch}
             className='absolute md:static top-10 -left-20 bg-white '
             >
