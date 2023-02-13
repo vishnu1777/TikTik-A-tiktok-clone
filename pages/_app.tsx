@@ -14,6 +14,7 @@ const MyApp = ({ Component, pageProps }: AppProps)=> {
 
   return(
     <GoogleOAuthProvider clientId='474791081385-bhe57d02j2b7a0s8k59qqb8duf24vo2b.apps.googleusercontent.com'>
+      <div className='xl:w-[1200px] m-auto overflow-hidden h-[100vh]'>
       <Navbar/>
       <div className='flex gap-6 md:gap-20'>
         <div className='h-[92vh] overflow-hidden xl:hover:overflow-auto'>
@@ -22,6 +23,7 @@ const MyApp = ({ Component, pageProps }: AppProps)=> {
         <div className='mt-4 flex flex-col gap-10 overflow-auto h-[88vh] videos flex-1'>
         <Component {...pageProps} />
         </div>
+      </div>
       </div>
       
     </GoogleOAuthProvider>
